@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
 <package format="3">
-  <name>moveit2_scripts</name>
+  <name>custom_msgs</name>
   <version>0.0.0</version>
   <description>TODO: Package description</description>
   <maintainer email="user@todo.todo">user</maintainer>
@@ -9,16 +9,8 @@
 
   <buildtool_depend>ament_cmake</buildtool_depend>
 
-  <depend>rclcpp</depend>
-  <depend>rclcpp_action</depend>
-  <depend>moveit_core</depend>
-  <depend>moveit_ros_planning</depend>
-  <depend>moveit_ros_planning_interface</depend>
-  <depend>interactive_markers</depend>
-  <depend>geometric_shapes</depend>
-  <depend>control_msgs</depend>
-  <depend>moveit_msgs</depend>
-    <depend>custom_msgs</depend>
+  <depend>rosidl_default_generators</depend>
+  <depend>geometry_msgs</depend> 
 
   <test_depend>ament_lint_auto</test_depend>
   <test_depend>ament_lint_common</test_depend>
@@ -26,4 +18,12 @@
   <export>
     <build_type>ament_cmake</build_type>
   </export>
+
+  <exec_depend>rosidl_default_runtime</exec_depend>
+  <exec_depend>builtin_interfaces</exec_depend>
+  <exec_depend>std_msgs</exec_depend>
+  <build_depend>builtin_interfaces</build_depend>
+  <build_depend>std_msgs</build_depend>
+  <member_of_group>rosidl_interface_packages</member_of_group>
+
 </package>
